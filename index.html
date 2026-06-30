@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Varad Takale - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Varad Takale
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          varadtakale45@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.vectorstock.com/i/500p/98/91/boy-with-laptop-on-beanbag-chair-vector-57139891.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Varad Takale! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am currently pursuing my Bachelor's degree in Artificial Intelligence and Data Science from Vishwakarma Institute of Technology, Pune. I have a strong passion for Data Analysis and web development and have been honing my skills in HTML, CSS, JavaScript, Python and C. I have Soft Skills in Communication, Teamwork, and Problem-Solving. I am always eager to learn new technologies and take on new challenges. I am excited to contribute my skills and knowledge to a dynamic team and make a positive impact in the field of Data Analysis and web development.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/python-logo.svg"/>
+          <h6>Python</h6>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h6>Node.js</h6>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>AI Project Generator</h3>
+            <ul>
+              <li>Developed a AI Project Generator Using Python, HTML, CSS and JavaScript.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Med AI</h3>
+            <ul>
+              <li>Developed a Medicince Reminder App (MedAI) as an ASEP Group Project</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Deepfake Image Detector</h3>
+            <ul>
+              <li>Created a Deepfake Image Detector using Python and TensorFlow.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+
+      <div id="all_recommendations" class="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>Varad is one of the most dependable teammates I've worked with — sharp with data, calm under deadline pressure, and always willing to explain his reasoning to the rest of the group.<span>&#8221;</span>
+          <div class="rec-name">— Tanishq Undare, ASEP Group Project Lead</div>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>His work on the Deepfake Image Detector showed real initiative. He didn't just implement the model, he took the time to understand why it worked and could explain the tradeoffs clearly.<span>&#8221;</span>
+          <div class="rec-name">— Prof. Lokesh Kulkarni, VIT Pune</div>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>Great collaborator for the MedAI project — organized, communicates early when something's blocked, and genuinely enjoys solving problems rather than just finishing tasks.<span>&#8221;</span>
+          <div class="rec-name">— Sarthak ThombarePatil, Project Teammate</div>
+        </div>
+      </div>
+
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" id="rec_name" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="50" rows="6" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="html_finalprojimages/home.png" alt="Back to top" class="home-icon"/>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you! Your recommendation has been submitted.</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
